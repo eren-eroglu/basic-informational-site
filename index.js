@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+// Serve static assets
+app.use(express.static('public'));
 
 // Set the view engine to EJS
 app.set('view engine', 'ejs');
